@@ -7,11 +7,7 @@ html {
 body {
   min-height: 100%;
   min-width: 100%;
-  background: linear-gradient(pink, violet);
-}
-
-button {
-  font-size: 7px;
+  background: linear-gradient(rgb(93, 212, 56), cyan);
 }
 
 #main-content {
@@ -27,7 +23,12 @@ button {
   box-shadow: 2px 5px 5px #333;
 }
 
+#tasks {
+  padding: 0;
+}
+
 #list {
+  min-width: 50%;
   margin: 10px;
   border: 1px solid #333;
   background: rgba(255, 255, 255, 0.75);
@@ -35,3 +36,38 @@ button {
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
 }
+
+.list-item {
+  padding: 10px 100px 10px 5px;
+  margin: 4px;
+  border-radius: 5px;
+  border: 3px solid;
+  list-style: none;
+  position: relative;
+}
+
+.delete {
+  background-color: red;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 5px;
+}
+
+#new-task-description {
+  font-size: 20px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 16px;
+  margin: 0 20px;
+}
+
+#importanceDropdown {
+  padding: 10px 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
